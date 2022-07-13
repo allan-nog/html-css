@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+*{
+    font-family: 'Poppins', sans-serif;
+    /* height: 100%; */
+}
+
+body{
+    background-image: linear-gradient(to right, #F1D8C9, #F2C3A7);
+}
+
+main{
+    background-color: #faf4f4;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(135, 110, 95, .6);
+    width: 600px;
+    padding: 20px;
+    margin: auto;
+}
+
+h1{
+    color: #e76218;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(130, 80, 5, .7);
+}
+
+h2{
+    color: #67b584;
+}
+
+p{
+    text-align: justify;
+}
