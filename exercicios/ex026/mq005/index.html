@@ -12,10 +12,11 @@
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="estilos/style.css">
+  <link rel="stylesheet" href="estilos/media-query.css">
 
 </head>
 
-<body>
+<body onresize="mudouTamanho()">
 
   <header>
     <h1> Meu Site </h1>
@@ -43,6 +44,14 @@
   </main>
 
   <script>
+
+    function mudouTamanho(){
+      if (window.innerWidth >= 769) {
+        menu.style.display = 'block'
+      } else {
+        menu.style.display = 'none'
+      }
+    }
 
     function clickMenu(){
       if (menu.style.display == 'none') {
