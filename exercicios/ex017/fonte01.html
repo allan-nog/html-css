@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Fontes em CSS </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        body{
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            /* 
+            Medidas absolutas: cm, mm, in, px, pt, pc
+            Medidas relativas: em, ex, rem, vw, vh, %
+            16px geralmente = 1em
+            */
+            font-size: 1.2em;
+
+            /* lighter normal bold bolder ou 100-900*/
+            font-weight: 500;
+
+            /* font-style: italic; */
+            /* text-decoration: underline; */
+        }
+        h1{
+            /* 
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+
+            shorthand font: font style -> font-weight -> font-size -> font-family */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+        h2{
+            font: bold 2em 'Work Sans'
+        }
+    </style>
+</head>
+<body>
+    <h1> Trabalhando com Fontes </h1>
+    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos modi ipsa ducimus esse molestias libero veritatis autem ullam ab in impedit soluta quidem, consequuntur facere sit, suscipit earum reiciendis. Totam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure sit tempore accusantium porro, qui unde quae aspernatur libero sed ab? Consectetur quo dolores odit dignissimos officia quis delectus magnam alias. </p>
+    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci eos dolorum ut voluptatem eius quod aperiam voluptas deserunt doloribus animi culpa facere quibusdam, tenetur est fuga sit rem hic? Facilis. </p>
+    <h2> Subtítulo do exercício </h2>
+    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque commodi, neque aut suscipit odit consectetur, magni laborum ipsam vero obcaecati pariatur blanditiis quos in fugiat delectus, minima quas! Nihil, nobis. </p>
+</body>
+</html>

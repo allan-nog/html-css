@@ -1,31 +1,31 @@
 @charset "UTF-8";
 
 *{
-    font-family: 'Poppins', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     /* height: 100%; */
 }
 
 body{
-    background-image: linear-gradient(to right, #F1D8C9, #F2C3A7);
+    background-image: linear-gradient(to right, #74E9CF, #3CE6C1);
 }
 
 main{
-    background-color: #faf4f4;
+    background-color: #FFF;
     border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(135, 110, 95, .6);
+    box-shadow: 2px 2px 2px #3cd2e6c0;
     width: 600px;
-    padding: 20px;
+    padding: 10px;
     margin: auto;
 }
 
 h1{
-    color: #e76218;
+    color: #3C9CE6;
     text-align: center;
-    text-shadow: 1px 1px 2px rgba(130, 80, 5, .7);
+    text-shadow: 1px 1px 2px #3ce686b2;
 }
 
 h2{
-    color: #67b584;
+    color: #3CE687;
 }
 
 p{
