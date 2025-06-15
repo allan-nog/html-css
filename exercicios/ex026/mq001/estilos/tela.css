@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/* Estilo para telas */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header{
+    background-color: skyblue;
+}
+
+header > h1{
+    text-align: center;
+}
+
+nav ul{
+    list-style-type: none;
+    background-color: gray;
+    padding: 5px;
+}
+
+nav li{
+    display: inline-block;
+    background-color: rgb(75, 75, 75);
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+article{
+    width: 600px;
+    display: block;
+    margin: auto;
+}
