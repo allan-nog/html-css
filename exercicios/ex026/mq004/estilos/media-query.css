@@ -18,6 +18,7 @@
 
     body{
         /* Não é necessário o background pois não se imprime background */
+        background-image: url('../imagens/back-print.jpg');
     }
 
     main{
