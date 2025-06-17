@@ -1,7 +1,86 @@
 @charset "UTF-8";
 
-/* Todas as demais media */
+/* 
+📱 Responsividade - Breakpoints típicos
+- Telas muito pequenas: até 480px
+- Celulares: 481px a 767px
+- Tablets (portrait): 768px a 991px
+- Tablets (landscape) / Laptops pequenos: 992px a 1199px
+- PCs médios: 1200px a 1439px
+- PCs grandes / 4K: 1440px ou mais
+*/
 
+/* Impressão */
 @media print {
-    
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body{
+        /* Não é necessário o background pois não se imprime background */
+    }
+
+    main{
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main::after{
+        content: 'Essa impressão foi feita atráves do site www.cursoemvideo.com';
+        text-decoration: overline;
+        text-align: center;
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: block; }
+    img#pc { display: none; }
+    img#tv { display: none; }
 }
+
+/* Os estilos para celulares já foram feitos pois usamos mobile-first */
+
+/* Tablets (portrait): 768px a 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+    body{
+        background-image: url('../imagens/back-tablet.jpg');
+    }
+    img#phone { display: none; }
+    img#tablet { display: block; }
+    img#print { display: none; }
+    img#pc { display: none; }
+    img#tv { display: none; }
+}
+
+/* Tablets (landscape) / Laptops pequenos: 992px a 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+    body{
+        background-image: url('../imagens/back-pc.jpg');
+    }
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#pc { display: block; }
+    img#tv { display: none; }
+}
+
+/* PCs: 1200px ou mais */
+@media (min-width: 1200px) {
+    body{
+        background-image: url('../imagens/back-tv.jpg');
+    }
+    main{
+        width: 700px;
+    }
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#pc { display: none; }
+    img#tv { display: block; }
+}
+
