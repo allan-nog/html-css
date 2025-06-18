@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/* 
+📱 Responsividade - Breakpoints típicos
+- Telas muito pequenas: até 480px
+- Celulares: 481px a 767px
+- Tablets (portrait): 768px a 991px
+- Tablets (landscape) / Laptops pequenos: 992px a 1199px
+- PCs médios: 1200px a 1439px
+- PCs grandes / 4K: 1440px ou mais
+*/
+
+@media screen and (min-width: 768px) {
+    i#burguer{
+        display: none;
+    }
+
+    nav{
+        display: block;
+        margin-top: 20px;
+    }
+
+    nav > ul > li {
+        display: inline-block;
+    }
+
+    nav a{
+        border: none;
+        border-radius: 8px;
+        margin: 5px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main{
+        max-width: 992px;
+    }
+}
