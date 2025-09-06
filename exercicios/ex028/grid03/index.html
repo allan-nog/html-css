@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Grid Layout na prática </title>
+    <style>
+        div.container{
+            border: 3px solid blue;
+            display: grid;
+            
+            grid-template-rows: repeat(3, 80px); 
+            grid-template-columns: 100px 40% 1fr;
+            
+            /* Grid implícito */
+            grid-auto-rows: 200px; /* Tamanho do elemento quando exceder a linha */
+            grid-auto-columns: 240px; /* Tamanho do elemento quando exceder a coluna */
+            grid-auto-flow: column; /* Quando exceder vai adicionar em forma de linha ou coluna(padrão é row) */
+            
+            gap: 10px;
+            
+            place-items: normal normal;
+            
+            place-content: normal normal;
+        }
+        div.item{
+            border: 3px solid red;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+    </div>
+</body>
+</html>
